@@ -2,7 +2,7 @@
     "name": "theredcorner/trctranslate",
     "description": "Use the ‘t’ function to output translations.",
     "type": "craft-plugin",
-    "version": "0.0.1",
+    "version": "1.0.0",
     "keywords": [
         "craft",
         "cms",

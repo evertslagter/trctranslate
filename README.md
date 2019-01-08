@@ -1,8 +1,6 @@
 # TRCTranslate plugin for Craft CMS 3.x
 
-Use the ‘t’ function to output translations.
-
-![Screenshot](resources/img/plugin-logo.png)
+Use the `t()` Twig function to output `I18n` like strings.
 
 ## Requirements
 
@@ -18,26 +16,21 @@ To install the plugin, follow these instructions.
 
 2. Then tell Composer to load the plugin:
 
-        composer require /trctranslate
+        composer require the-red-corner/trctranslate
 
 3. In the Control Panel, go to Settings → Plugins and click the “Install” button for TRCTranslate.
 
-## TRCTranslate Overview
-
--Insert text here-
-
 ## Configuring TRCTranslate
 
--Insert text here-
+1. Add a section with the handle `translations`.
+2. Add a field with the handle `key` to the `translations` section. You also have to include the `title` field for this section.
 
 ## Using TRCTranslate
 
--Insert text here-
+Use the following syntax to display a translated string in your templates:
 
-## TRCTranslate Roadmap
+        {{ t('footer.address.phoneNumber') }}
 
-Some things to do, and ideas for potential features:
+`footer.address.phoneNumber` is the key of the translation entry.
 
-* Release it
-
-Brought to you by [Rens Verschuren](https://theredcorner.nl/)
+Brought to you by [The Red Corner](https://theredcorner.nl/)
